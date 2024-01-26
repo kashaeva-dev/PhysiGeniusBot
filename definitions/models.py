@@ -17,8 +17,8 @@ class Client(models.Model):
 class Definition(models.Model):
     CATEGORIES = (
         ('definition', 'определение'),
-        ('axiom', 'аксиома'),
-        ('theorem', 'теорема'),
+        ('law', 'закон'),
+        ('case', 'пример'),
     )
     name = models.CharField(max_length=100, verbose_name='Определение')
     category = models.CharField(max_length=100, verbose_name='Категория', choices=CATEGORIES, default='definition')
